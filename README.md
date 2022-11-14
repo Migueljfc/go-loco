@@ -34,7 +34,6 @@ Features implemented:
 To-Do List:
  - Develop API to test different Models that are hardcoded ATM.
  - Add Settings menu
- - Fix QR Code page
  - Unlock achievements
 
  ![Screenshot](assets/logo.png)
