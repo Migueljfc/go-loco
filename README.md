@@ -1,9 +1,4 @@
 # GoLoco Application
-
-An Application built to search nearby places
-This code is available at:
-[GoLoco](https://github.com/AnBapDan/Mobile-App-GoLoco)
-
 ## Description
 GoLoco is an application that helps the community finding new locations to visit and explore.
 Due to its design, the app incentivizes to walk by giving them "achievements" to unlock!.
