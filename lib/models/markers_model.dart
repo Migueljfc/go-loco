@@ -7,6 +7,7 @@ class MarkersModel {
   final String image;
   final String id;
   final String name;
+  final String qrcode;
 
   MarkersModel({
     required this.id,
@@ -15,16 +16,18 @@ class MarkersModel {
     required this.status,
     required this.image,
     required this.url,
+    required this.qrcode,
   });
 
   factory MarkersModel.fromJson(Map<String, dynamic> json) {
     return MarkersModel(
       name: json['name'],
-      id: json['id'],
+      id: json['id'].toString(),
       pos: LatLng(json['lat'], json['lon']),
       status: json['status'].toString().toLowerCase() == 'true',
-      image: json['image'],
-      url: Uri.parse(json['url']),
+      image: json['imageUrl'],
+      url: Uri.parse(json['url'],),
+      qrcode: json['qrCode'],
     );
   }
 }

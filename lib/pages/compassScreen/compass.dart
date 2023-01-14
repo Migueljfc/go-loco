@@ -17,10 +17,10 @@ part 'widgets/custom_painter.dart';
 
 class CompassPage extends StatelessWidget {
   final LatLng goal;
-
+  final String qrcode;
   const CompassPage({
     Key? key,
-    required this.goal,
+    required this.goal, required this.qrcode,
   }) : super(key: key);
 
   @override
@@ -36,7 +36,7 @@ class CompassPage extends StatelessWidget {
                 onPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (context) => QRScreen(),
+                      builder: (context) => QRScreen(qrcode:qrcode),
                     ),
                   );
                 },

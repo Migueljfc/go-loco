@@ -8,7 +8,7 @@
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
     <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="cm_project"
+        android:label="Go Loco"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <meta-data 

@@ -1,9 +1,11 @@
 import 'dart:io';
+import 'package:cm_project/pages/qrScreen/sucess_popup.dart';
 import 'package:flutter/material.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
 class QRScreen extends StatefulWidget {
-  const QRScreen({Key? key}) : super(key: key);
+  final String qrcode;
+  const QRScreen({Key? key, required this.qrcode}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() => _QRScreenState();
@@ -67,6 +69,13 @@ class _QRScreenState extends State<QRScreen> {
       setState(() {
         result = scanData;
         print(result!.code);
+        if(result!.code==widget.qrcode){
+          print("CORRECT QRCODE");
+          controller.pauseCamera();
+          //final response = await postData({"title": "foo", "body": "bar", "userId": 1});
+          //print("REPONSE = " + response.toString());
+          showDialog(context: context, builder:(BuildContext context) => sucessPopup(context), ) ;
+        }
       });
     });
     controller.pauseCamera();

@@ -16,7 +16,7 @@ class AchievementModel {
   factory AchievementModel.fromJson(Map<String, dynamic> json) {
     return AchievementModel(
         value: json['value'],
-        date: json['date'] != '' ? json['date'] : 'Bloqueado',
+        date: json['date'] != '' ? json['date'].toString().split('T').first : 'Bloqueado',
         image: json['image'] ?? 'assets/logo_short.png',
         name: json['name'],
         status: json['date'] == '' ? 0 : 1);

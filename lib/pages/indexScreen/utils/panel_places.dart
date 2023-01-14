@@ -1,7 +1,5 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'dart:math';
-
 import 'package:cm_project/blocs/markers_bloc/bloc/marker_bloc.dart';
 import 'package:cm_project/utils/places_widget.dart';
 import 'package:flutter/material.dart';

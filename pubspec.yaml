@@ -53,6 +53,7 @@ dependencies:
   smooth_compass: 
   vector_math: any  
   qr_code_scanner: ^1.0.1
+  restart_app: ^1.1.1+1
   
 dev_dependencies:
   flutter_test:
