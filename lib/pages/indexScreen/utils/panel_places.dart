@@ -49,8 +49,8 @@ class Places extends StatelessWidget {
                           : 5,
                       itemBuilder: (context, index) {
                         return PlacesWidget(
-                          asset: completedMarkers[index].image,
-                          message: completedMarkers[index].name,
+                          asset: completedMarkers[completedMarkers.length - 1 - index].image,
+                          message: completedMarkers[completedMarkers.length - 1 - index].name,
                         );
                       },
                     ),

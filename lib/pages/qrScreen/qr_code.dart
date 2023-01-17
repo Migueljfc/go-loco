@@ -64,17 +64,21 @@ class _QRScreenState extends State<QRScreen> {
   }
 
   void _onQRViewCreated(QRViewController controller) {
-   this.controller = controller;
+    this.controller = controller;
     controller.scannedDataStream.listen((scanData) {
       setState(() {
         result = scanData;
         print(result!.code);
-        if(result!.code==widget.qrcode){
+        if (result!.code == widget.qrcode) {
           print("CORRECT QRCODE");
           controller.pauseCamera();
-          //final response = await postData({"title": "foo", "body": "bar", "userId": 1});
-          //print("REPONSE = " + response.toString());
-          showDialog(context: context, builder:(BuildContext context) => sucessPopup(context), ) ;
+          showDialog(
+            context: context,
+            builder: (BuildContext context) => sucessPopup(
+              context,
+              qrcode: widget.qrcode,
+            ),
+          );
         }
       });
     });
