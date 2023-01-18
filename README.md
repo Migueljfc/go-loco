@@ -12,11 +12,7 @@ Features implemented:
  - Biometric Sensors
  - Giroscope
  - Shared Preferences
-
-To-Do List:
- - Develop API to test different Models that are hardcoded ATM.
- - Add Settings menu
- - Unlock achievements
+ - PostgreSQL Database
 
 note: This is a work in progress and a lot can be changed.
  ![Screenshot](assets/logo.png)
