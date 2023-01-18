@@ -6,7 +6,7 @@ Due to its design, the app incentivizes to walk by giving them "achievements" to
 ## Details
 Features implemented:
  - Pedometer
- - REST API integration
+ - <a href="https://github.com/Migueljfc/go-loco-api">REST API integration</a> 
  - Location Coordinates
  - Google Maps
  - Biometric Sensors
